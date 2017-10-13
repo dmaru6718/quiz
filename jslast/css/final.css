@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+html {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 100%;
+    font-size: 62.5%;
+
+}
+
+body {
+    font-family: 'Andale Mono','Avenir Next','HanziPen TC','ヒラギノ角ゴシック','Hiragino Sans','sans-serif';
+
+}
+
+h1 {
+    margin: 0 auto;
+    color: #ffffff;
+    font-size:4.8rem;
+    font-weight: bold;
+}
+
+h2 {
+    margin: 0 auto;
+    font-weight: normal;
+    color: #ffffff;
+    text-align: center;
+    font-size: 3.6rem;
+}
+h4 {
+    margin: 0 auto;
+    font-weight: normal;
+    margin-bottom: 6rem;
+    font-size: 1.8rem;
+}
+
+h3 {
+    margin: 0 auto;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    font-size: 2.4rem;
+}
+
+body {
+    padding-top: 0;
+    margin: 0 auto;
+    max-width: 100%;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+.site-title{
+    margin:0 auto;
+    background-image: url(../images/umi.png);
+    background-size: cover;
+}
+
+.site-title2 h1{
+    color: dimgray;
+    font-size: 32px;
+    line-height: 1;
+    padding-top:20px;
+}
+
+.site-title2 h2{
+    color: dimgrey;
+    font-size:20px;
+    padding-bottom:10px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: #707070;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    color: #ffffff;
+}
+
+#kekka{
+    margin-top:120px;
+    line-height: 30px
+}
+
+#tensu {
+    color: #000000;
+}
+
+#hyoka{
+    font-size:20px;
+}
+
+#btn1 {
+	background-color: #333;
+	color: #fff;
+    width:200px;
+    height:50px;
+    margin-top:3rem;
+}
+#btn1:hover {
+	background-color: #59b1eb;
+}
+
+#btn1 p{
+    font-size:20px;
+    margin: 0;
+}

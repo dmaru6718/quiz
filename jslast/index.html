@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>quisss</title>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/var.js"></script>
+<!--    <script type="" src="js/do.js"></script>-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+       <div class="site-title">
+       <div class="site-title2">
+        <h1>だいまる検定</h1>
+        <h2>キミは難問 解けるかな？？？</h2>
+        </div>
+        </div>
+    
+    <main>
+    
+<div class="qqqq">
+       
+    <div class="question">
+       <div class="qnum">Q</div>
+        <p id="qs">ここに表示されるよ</p>
+    </div>
+        
+    <div class="kotaee">
+       
+    <div id="line">
+        <div id="sc1" class="sc">
+        <div id="gazo">
+            <p id="img1"></p>
+        </div>
+            <button name="toi" value="1" id="n1"></button>
+        </div>
+        
+        <div id="sc2" class="sc">
+          <div id="gazo">
+           <p id="img2"></p>
+          </div>
+            <button name="toi" value="2" id="n2">a</button>
+        </div>
+    </div>
+       
+    <div id="line">
+        <div id="sc3" class="sc">
+          <div id="gazo">
+           <p id="img3"></p>
+          </div>
+            <button name="toi" value="3" id="n3">a</button>
+        </div>
+        
+        <div id="sc4" class="sc">
+          <div id="gazo">
+           <p id="img4"></p>
+          </div>
+            <button name="toi" value="4" id="n4">a</button>
+        </div>
+    </div>
+    
+    </div>
+        
+    </div>
+    
+    <p id="score">score</p>
+    
+    <div class="footer">
+        <footer>copyrights 2016 G's Academy Tokyo All RIghts Reserved.</footer>
+    </div>
+
+   
+    
+   
+    </main>
+    
+    <script type="text/javascript" >
+        
+        
+        
+        
+$("#qs").html(qs[i]);
+$("#n1").html(toi[i][0]);
+$("#n2").html(toi[i][1]);
+$("#n3").html(toi[i][2]);
+$("#n4").html(toi[i][3]);
+$("#img1").html(img[i][0]);
+$("#img2").html(img[i][1]);
+$("#img3").html(img[i][2]);
+$("#img4").html(img[i][3]);
+//クリック後の処理
+$("[name=toi]").on("click",function(){
+    if($(this).val()==ans[i]){
+                alert("大当たり！！");
+                s++;
+            }else{
+                alert("boooooo!!!")
+            }{
+                //点数加算
+    $("#score").html("SCORE:"+s*10);
+            }
+    i++;
+    
+    //問題の終了
+if(i<qs.length){
+    //次の問題へ
+$("#qs").html(qs[i]);
+$("#n1").html(toi[i][0]);
+$("#n2").html(toi[i][1]);
+$("#n3").html(toi[i][2]);
+$("#n4").html(toi[i][3]);
+$("#img1").html(img[i][0]);
+$("#img2").html(img[i][1]);
+$("#img3").html(img[i][2]);
+$("#img4").html(img[i][3]);
+
+    //終わり
+}else{
+    window.sessionStorage.setItem("score",s);
+    window.location.href="./final.html"
+        }
+});
+
+
+    </script>
+    
+</body>
+</html>
